@@ -1,4 +1,4 @@
 module.exports = {
     outputDir: "docs",
-    publicPath: process.env.NODE_ENV === "production" ? "/project_name/" : "/"
+    publicPath: process.env.NODE_ENV === "production" ? "/login-form-mobile/" : "/"
 }
