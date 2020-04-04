@@ -28,6 +28,7 @@ export default {
   --c-bg: #f3f1eb;
   --c-white: #fefdf9;
   --c-text: #333333ee;
+  --c-red: #c33149;
 }
 
 html,

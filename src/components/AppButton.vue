@@ -51,4 +51,26 @@ export default {
 .app-button button img {
   width: 30%;
 }
+
+@media (max-width: 1199px) {
+  .app-button button {
+    width: 13.5vmin;
+    height: 13.5vmin;
+  }
+
+  .app-button h2 {
+    font-size: 4.5vmin;
+  }
+}
+
+@media (max-width: 766px) {
+  .app-button button {
+    width: 18vmin;
+    height: 18vmin;
+  }
+
+  .app-button h2 {
+    font-size: 6vmin;
+  }
+}
 </style>

@@ -19,7 +19,7 @@ export default {
   height: 5vmin;
   margin-bottom: 10%;
   width: 100%;
-  font-size: 2.5vmin;
+  font-size: 2.6vmin;
   color: var(--c-text);
   letter-spacing: 0.1vmin;
 }
@@ -31,5 +31,17 @@ export default {
 
 .app-input:focus {
   outline: none;
+}
+
+@media (max-width: 1199px) {
+  .app-input {
+    font-size: 3.9vmin;
+  }
+}
+
+@media (max-width: 766px) {
+  .app-input {
+    font-size: 5.2vmin;
+  }
 }
 </style>
