@@ -1,7 +1,7 @@
 <template>
   <div class="app-button flex">
     <h2>{{cta}}</h2>
-    <button class="flex flex--cc">
+    <button class="flex flex--cc h-shadow">
       <img src="../img/arrow.svg" alt="Go" />
     </button>
   </div>
