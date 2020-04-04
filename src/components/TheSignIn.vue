@@ -1,21 +1,27 @@
 <template>
   <section id="the-sign-in" class="flex flex--column">
     <h1>Welcome Back</h1>
-    <FormInput ph="Email" />
-    <FormInput ph="Password" isPassword />
-    <ButtonGo cta="Sign in" />
+    <AppInput ph="Email" />
+    <AppInput ph="Password" isPassword />
+    <AppButton cta="Sign in" />
+    <div class="wrap--links flex">
+      <AppLink text="Sign up" />
+      <AppLink text="Reset Password" />
+    </div>
   </section>
 </template>
 
 <script>
-import FormInput from "./FormInput.vue";
-import ButtonGo from "./ButtonGo.vue";
+import AppInput from "./AppInput.vue";
+import AppButton from "./AppButton.vue";
+import AppLink from "./AppLink.vue";
 
 export default {
   name: "TheSignIn",
   components: {
-    FormInput,
-    ButtonGo
+    AppInput,
+    AppButton,
+    AppLink
   }
 };
 </script>
@@ -28,15 +34,22 @@ export default {
   background-size: contain;
   background-repeat: no-repeat;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding: 40% 10% 10% 10%;
+  position: relative;
 }
 
 #the-sign-in h1 {
+  font-size: 4vmin;
   max-width: 10ch;
   height: 4vmin;
   font-weight: 400;
   color: #fff;
   margin-bottom: 80%;
+}
+
+.wrap--links {
+  justify-content: space-between;
+  width: 100%;
 }
 </style>

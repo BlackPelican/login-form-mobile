@@ -1,5 +1,5 @@
 <template>
-  <div class="button-go flex">
+  <div class="app-button flex">
     <h2>{{cta}}</h2>
     <button class="flex flex--cc">
       <img src="../img/arrow.svg" alt="Go" />
@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: "ButtonGo",
+  name: "AppButton",
   props: {
     cta: String
   }
@@ -17,20 +17,21 @@ export default {
 </script>
 
 <style>
-.button-go {
+.app-button {
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 6vmin;
 }
 
-.button-go h2 {
+.app-button h2 {
   color: var(--c-text);
   font-size: 3vmin;
 }
 
-.button-go button {
-  height: 10vmin;
-  width: 10vmin;
+.app-button button {
+  height: 9vmin;
+  width: 9vmin;
   border-radius: 50%;
   background: linear-gradient(to right, #33353d, #464b55);
   color: #fff;
@@ -39,15 +40,15 @@ export default {
   transition: transform 200ms ease-in-out;
 }
 
-.button-go button:focus {
+.app-button button:focus {
   outline: none;
 }
 
-.button-go button:active {
+.app-button button:active {
   transform: scale(0.95);
 }
 
-.button-go button img {
+.app-button button img {
   width: 30%;
 }
 </style>

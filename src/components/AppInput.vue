@@ -1,10 +1,10 @@
 <template>
-  <input class="form-input" :type="isPassword ? 'password' : 'text'" :placeholder="ph" />
+  <input class="app-input" :type="isPassword ? 'password' : 'text'" :placeholder="ph" />
 </template>
 
 <script>
 export default {
-  name: "FormInput",
+  name: "AppInput",
   props: {
     ph: String,
     isPassword: Boolean
@@ -13,7 +13,7 @@ export default {
 </script>
 
 <style>
-.form-input {
+.app-input {
   border: none;
   border-bottom: 1px solid #ccc;
   height: 5vmin;
@@ -24,12 +24,12 @@ export default {
   letter-spacing: 0.1vmin;
 }
 
-.form-input::placeholder {
+.app-input::placeholder {
   color: #888;
   font-size: 75%;
 }
 
-.form-input:focus {
+.app-input:focus {
   outline: none;
 }
 </style>
