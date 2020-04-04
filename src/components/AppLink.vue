@@ -15,7 +15,7 @@ export default {
 .app-link {
   text-decoration: underline;
   color: var(--c-text);
-  font-weight: 700;
+  opacity: 0.8;
   font-size: 1.8vmin;
   letter-spacing: 0.05vmin;
 }

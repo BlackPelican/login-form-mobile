@@ -1,6 +1,6 @@
 <template>
   <section id="the-sign-in" class="flex flex--column">
-    <h1>Welcome Back</h1>
+    <h1 :class="{'h-fade-in': true}">Welcome Back</h1>
     <AppInput ph="Email" />
     <AppInput ph="Password" isPassword />
     <AppButton cta="Sign in" />
@@ -48,8 +48,41 @@ export default {
   margin-bottom: 80%;
 }
 
+.h-fade-in {
+  animation: fade-in;
+  animation-duration: 2000ms;
+  animation-timing-function: ease-in-out;
+}
+
+.h-fade-left {
+  animation: fade-left;
+  animation-duration: 2000ms;
+  animation-timing-function: ease-in-out;
+}
+
 .wrap--links {
   justify-content: space-between;
   width: 100%;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fade-left {
+  0% {
+    transform: translateX(-150%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 </style>
